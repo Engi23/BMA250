@@ -19,8 +19,8 @@ namespace BMA250
 	public sealed partial class MainPage : Page
 	{
 		private const byte ACCEL_I2C_ADDR = 0x18;		// I2C address of the BMA250
-		private const byte ACCEL_REG_RANGE_SLCT = 0x0F;		// Address of the Range Selection register
-		private const byte ACCEL_REG_BANDWIDTH = 0x10;		// Address of the Bandwidth register 
+		private const byte ACCEL_REG_RANGE_SLCT = 0x0F;		// Address of the g-Range Selection register
+		private const byte ACCEL_REG_BANDWIDTH = 0x10;		// Address of the Bandwidths register 
 		private const byte ACCEL_REG_X = 0x02;			// Address of the X Axis data register
 		private const byte ACCEL_REG_Y = 0x04;			// Address of the Y Axis data register
 		private const byte ACCEL_REG_Z = 0x06;			// Address of the Z Axis data register
