@@ -6,7 +6,7 @@
 
 #include <Wire.h>
 
-// BMA250 I2C address is 0x18(24)
+// BMA250 I2C address is 0x18(24) or 0x19(25)
 #define Addr 0x18
 
 void setup()
@@ -38,7 +38,7 @@ void setup()
 
 void loop()
 {
-  unsigned int data[0];
+  uint8_t data[6]; //correct type declaration
   // Start I2C Transmission
   Wire.beginTransmission(Addr);
   // Select Data Registers (0x02 − 0x07)
